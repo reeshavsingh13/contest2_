@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Startup</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+    
+</head>
+<style>
+    body{
+        background-color: #000;
+    }
+    /* Navbar */
+header {
+position: fixed;
+top: 0;
+width: 100%;
+background-color: #dd8b26;
+z-index: 1000;
+}
+
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 20px;
+}
+
+.navbar .logo img {
+width: 100px; /* Adjust size as needed */
+}
+
+.nav-links {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+.nav-links li {
+display: inline;
+margin-left: 20px;
+}
+
+.nav-links li:first-child {
+margin-left: 0;
+}
+
+.nav-links a {
+color: #0a0a0a;
+text-decoration: none ;
+}
+
+/* Intro Section */
+.intro-section {
+padding: 100px 0;
+background-color: #030303;
+text-align: center;
+}
+
+.intro-content {
+display: flex;
+justify-content: space-between;
+align-items: center;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.intro-text {
+flex: 1;
+padding: 0 20px;
+color: white;
+}
+
+.intro-text h1 {
+font-size: 36px;
+margin-bottom: 20px;
+color: white;
+text-align: left;
+
+}
+
+.intro-text p {
+font-size: 18px;
+margin-bottom: 20px;
+}
+
+.intro-image img {
+max-width: -100%;
+}
+
+
+    /* CSS for removing blue outline on focus */
+    input:focus, textarea:focus, select:focus {
+        outline: none;
+        background-color: #030303;
+    }
+    
+    /* Additional styling for input fields */
+    input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #121212;
+        border-radius: 25px;
+    }
+    input[type="email"] {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #121212;
+        border-radius: 25px;
+    }
+    
+    /* Style for the submit button */
+    input[type="submit"] {
+        background-color: #e49711;
+        color: rgb(0, 0, 0);
+        padding: 10px 20px;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        text-align:center;
+    }
+    
+    input[type="submit"]:hover {
+        background-color: #e9a017;
+    }
+    
+    /* Additional styling for the container */
+    .container {
+        max-width: 500px;
+        margin: auto;
+        padding: 20px;
+        background-color: #040404;
+        border-radius: 10px;
+    }
+    
+    /* Custom input styles */
+    .custom-input {
+      /* border: 1px solid #eb9a22; */
+      border-radius: 25px;
+      padding: 8px;
+      margin-bottom: 10px;
+      background-color: #030303;
+    }
+    
+    /* Remove blue outline when input is focused */
+    .custom-input:focus {
+      outline: none;
+      border-color: #0a0a0a; /* Change border color when focused, if desired */
+      /* Add any additional styling for focused input here */
+    }
+   
+    /* {
+      outline: none;
+      border-color: #e8a01a;
+      background-color: black;
+    } */
+  /* Table styles */
+table {
+width: 100%;
+border-collapse: collapse;
+margin-bottom: 20px;
+/* background-color: #030303; */
+}
+th, td {
+border: 1px solid #de900a;
+padding: 8px;
+text-align: left;
+/* background-color: #030303; */
+color: orange;
+}
+th {
+/* background-color: #0d0d0d; */
+color:orange;
+}
+tfoot {
+font-weight: normal;
+background-color: #e0880e;
+color:black ;
+}
+input::placeholder{
+    color:#e0880e;
+}
+input{
+    outline: 2px solid #eb9a22;
+}
+/* styling by ashutosh for contact us */
+
+.contactUs{
+/* background-color: black; */
+padding: 50px;
+}
+.contactTitle{
+    margin-left: 65px;
+    color:#e0880e;
+    border: 2px solid #e0880e;
+    font-size: 32px;
+    padding: 5px;
+}
+form{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.table-section{
+    /* background-color: #000; */
+    padding-left: 116px;
+    padding-right: 116px;
+
+}
+
+/* styling by ashutosh for contact us */
+
+</style>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo"><div><b>Startup</b></div>
+               
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="intro-section">
+        <div class="intro-content">
+            <div class="intro-text">
+                <h1>Startup Landing Page</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <button style="background-color: #e8a01a; color: #0b0b0b;">Click me</button wght="95px" height="39px">
+
+
+            </div>
+            <div class="intro-image">
+                <img src="https://live.staticflickr.com/65535/32878819397_64ea65b12e_b.png" alt="Jeff Bezos" width="697px" height="482px">
+            </div>
+        </div>
+    </section >
+</div>
+   
+    <div class="contactUs ">
+
+        <span class="contactTitle " >Contact Us</span>
+   
+        
+        <form action="/submit-contact" method="POST">
+            <label for="name"></label><br>
+      <input type="text" id="name" name="name" placeholder="Name" class="custom-input"><br>
+      <label for="email"></label><br>
+      <input type="email" id="email" name="email" placeholder="Email" class="custom-input"><br>
+      <div class="d-flex align-items-center justify-content-between mt-4">
+
+      
+      <!-- <label for="mobile"></label><br> -->
+      <input  type="number" id="mobile" name="mobile" placeholder="Mobile Number" class="custom-input " style="width: 45%;"><br>
+      <!-- <label for="city"></label><br> -->
+      <input id="city" name="city" placeholder="City" class="custom-input" style="width: 45%;"></input>
+    </div>
+      <div class="d-flex justify-content-center mt-5">
+
+          <input type="submit" value="Submit Form" color="orange" > 
+      </div>
+    </form>
+</div>   
+    
+<!-- div added to center the table start -->
+<div class="  table-section">
+
+
+
+<table>
+  <thead>
+    <tr>
+      <th>SR.NO</th>
+      <th>Startup Name</th>
+      <th>Startup Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1.</td>
+      <td>Wow india</td>
+      <td>A startup with wow ideas</td>
+     
+    </tr>
+    <tr>
+      <td>2.</td>
+      <td>Loreum Ipsum</td>
+      <td>Loreum Ipsum Text</td>
+    </tr>
+
+    <tr>
+        <td>2.</td>
+        <td>Loreum Ipsum</td>
+        <td>Loreum Ipsum Text</td>
+      </tr>
+
+      <tr>
+        <td>2.</td>
+        <td>Loreum Ipsum</td>
+        <td>Loreum Ipsum Text</td>
+      </tr>
+
+      <tr>
+        <td>2.</td>
+        <td>Loreum Ipsum</td>
+        <td>Loreum Ipsum Text</td>
+      </tr>
+
+      <tr>
+        <td>2.</td>
+        <td>Loreum Ipsum</td>
+        <td>Loreum Ipsum Text</td>
+      </tr>
+
+      <tr>
+        <td>2.</td>
+        <td>Loreum Ipsum</td>
+        <td>Loreum Ipsum Text</td>
+      </tr>
+
+
+  </tbody>
+  <tfoot style="border:2px solid #e8a01a !important">
+    <tr >
+      <td style="color: #000 !important;border-right:2px solid #000 !important">00</td>
+      <td style="color: #000 !important;border-right:2px solid #000 !important">Final Footar</td>
+      <td style="color: #000 !important;border-left:2px solid #000 !important">Loreum Ipsum Text</td>
+    </tr>
+  </tfoot>
+</table>
+</div>
+<!-- div added to center the table End -->
+
+</body>
+</html>
